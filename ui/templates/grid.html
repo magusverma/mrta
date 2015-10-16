@@ -10,7 +10,7 @@
     <title>MRTA Simulator</title>
     <!-- http://designindevelopment.com/css/css3-chess-board/ -->
     <style type="text/css">
-        a {
+/*        a {
             color: #000;
             display: block;
             font-size: 60px;
@@ -20,10 +20,11 @@
             text-shadow: 0 1px #fff;
             width: 80px;
         }
-        
+*/        
         #chess_board {
             border: 1px solid #333;
-            margin-left: 10%;
+            margin-left: 2%;
+            margin-top: 2%;
         }
         
         #chess_board td {
@@ -33,10 +34,10 @@
             box-shadow: inset 0 0 0 1px #fff;
             -moz-box-shadow: inset 0 0 0 1px #fff;
             -webkit-box-shadow: inset 0 0 0 1px #fff;
-            height: 80px;
+            height: {{500/height}}px;
             text-align: center;
             vertical-align: middle;
-            width: 80px;
+            width: {{1200/width}}px;
         }
                 
         #chess_board td.active {
@@ -57,40 +58,38 @@
   <body>
 
     <!-- Begin page content -->
-    <div class="container">
+    <!-- <div class="container">
       <div class="page-header">
         <h1 align="center">MRTA Simulation</h1>
       </div>
-    </div>
+    </div> -->
 
-    <table id="chess_board" cellpadding="0" cellspacing="0">
-    <tr><td><a>&#9820;</a></td><td>Robot</td>
-    <td></td><td><a>&#9830;</a></td><td>Target</td></tr>
-    </table>
-    <br>
 
     <table id="chess_board" cellpadding="0" cellspacing="0">
         <tr>
         <td></td>
-          {% for i in range(Matrix[0]|length) %}
+          {% for i in range(width) %}
             <td>{{i}}</td>
           {% endfor %}
         </tr>
-        {% for i in range(Matrix|length) %}
+        {% for i in range(height) %}
         <tr>
             <td>{{i}}</td>
-            {% for j in range(Matrix[i]|length) %}
-              {% if Matrix[i][j] == "bot" %}
-              <td><a>&#9820;</a></td>
-              {% elif Matrix[i][j] == "target" %}
-              <td><a>&#9830;</a></td>
+            {% for j in range(width) %}
+              {% if grid[i][j] %}
+                <td style="background:black"><div id="{{i}}_{{j}}"></div></td>
               {% else %}
-              <td><a></a></td>
+                <td ><div id="{{i}}_{{j}}"></div></td>
               {% endif %}
-              {% else %}
             {% endfor %}
         </tr>
         {% endfor %}
+    </table>
+
+    <br>
+        <table id="chess_board" cellpadding="0" cellspacing="0">
+    <tr><td><a>&#9820;</a></td><td>Robot</td>
+    <td></td><td><a>&#9830;</a></td><td>Target</td></tr>
     </table>
 
     <footer class="footer">
@@ -99,7 +98,54 @@
       </div>
     </footer>
 
-
     <script src="http://getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript">
+    states = {{ans}};
+    colors = ["#99FFCC","#CCCC99","#CCCCCC","#CCCCFF","#CCFF99","#CCFFCC","#CCFFFF"];
+    targets = {{targets}};
+    
+    for (var i = targets.length - 1; i >= 0; i--) {
+      $("#"+targets[i][0]+"_"+targets[i][1]).html("TARGET");
+      $("#"+targets[i][0]+"_"+targets[i][1]).parent().css({background: "red"});
+    };
+    
+    i = -1;
+
+    $(function(){
+    setInterval(oneSecondFunction, {{delay}});
+    });
+
+    function oneSecondFunction() {
+      if(i==-1){
+
+      }else{
+
+      for (j = 0; j < states[i].length; j++){
+        current_element_x = states[i][j][0];
+        current_element_y = states[i][j][1];
+        $("#"+current_element_x+"_"+current_element_y).parent().css({background: colors[j]});
+      }
+      }
+            i = (i+1)%states.length;
+
+      for (j = 0; j < states[i].length; j++){
+        current_element_x = states[i][j][0];
+        current_element_y = states[i][j][1];
+        console.log("#"+current_element_x+"_"+current_element_y);
+        // console.log($("#"+current_element_x+"_"+current_element_y));
+        $("#"+current_element_x+"_"+current_element_y).parent().css({background: "green"});
+        $("#"+current_element_x+"_"+current_element_y).html("&#9820;"+j+" (Step:"+i+")");
+      }
+      // if(i==0){
+      // for (var k = targets.length - 1; k >= 0; k--) {
+      //   $("#"+targets[k][0]+"_"+targets[k][1]).parent().css({background: "red"});
+      // }; 
+      // }
+
+    }
+    </script>
+
   </body>
 </html>

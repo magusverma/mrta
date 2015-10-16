@@ -67,10 +67,13 @@ struct state{
 
     string getRobos(){
         stringstream ss;
+        ss<<"[";
         for (int i = 0; i < robots.size(); ++i)
         {
-            ss<<robots[i].row<<","<<robots[i].col<<" ";
+            ss<<"["<<robots[i].row<<","<<robots[i].col<<"]";
+            if(i!=robots.size()-1)ss<<",";
         }
+        ss<<"]";
         return ss.str();
     }
 
@@ -191,7 +194,7 @@ vector<action> get_possible_actions(state s){
         {
             for (int j = -1; j <= 1; ++j)
             {
-                if(i==0 &&j==0) continue;
+                // if(i==0 &&j==0) continue;
                 if(movable(robot.row + i, robot.col + j)){
                     agent_move m;
                     m.x_agent_move = i;
@@ -205,7 +208,8 @@ vector<action> get_possible_actions(state s){
         limit.push_back(v.size());
     }
 
-    while(!reached_limit(base,limit)){
+    while(true){
+        // cout<<base[0]<<" "<<limit[0]<<endl;
         action a;
         for (int i = 0; i < s.robots.size(); ++i)
         {
@@ -214,6 +218,7 @@ vector<action> get_possible_actions(state s){
         if(validate_transition(s,a)){
             possible_actions.push_back(a);
         }
+        if(reached_limit(base,limit))break;
         base = increment(base,limit);
     }
 
@@ -253,7 +258,7 @@ state transition(state s, action a){
             }
         }
     }
-    new_state.solution_ = s.solution_+";"+new_state.getRobos();    
+    new_state.solution_ = s.solution_+","+new_state.getRobos();    
     // cout<<"-Parent Set as: "<<(*(new_state.parent)).getRep()<< " For:"<<new_state.getRep()<<endl;
     return new_state;
 }
@@ -281,11 +286,53 @@ class Comparator
     }
 };
 
+// The functions parseLine and getValue have been taken from http://stackoverflow.com/questions/63166/how-to-determine-cpu-and-memory-consumption-from-inside-a-process
+// and are used for finding the memory consumed
+int parseLine(char* line){
+        int i = strlen(line);
+        while (*line < '0' || *line > '9') line++;
+        line[i-3] = '\0';
+        i = atoi(line);
+        return i;
+    }
+
+int getValue(){ //Note: this value is in KB!
+    FILE* file = fopen("/proc/self/status", "r");
+    int result = -1;
+    char line[128];
+
+    while (fgets(line, 128, file) != NULL){
+        if (strncmp(line, "VmSize:", 7) == 0){
+            result = parseLine(line);
+            break;
+        }
+    }
+    fclose(file);
+    return result;
+}
+
+#include <sys/time.h>
+#include <sys/resource.h>
+
+long getMemoryUsage() 
+{
+  struct rusage usage;
+  if(0 == getrusage(RUSAGE_SELF, &usage))
+    return usage.ru_maxrss; // bytes
+  else
+    return 0;
+}
+
+
 pair<state, double> dijkstra(state start_state){
+    ll states_expanded = 0;
+    ll memory=0;
+    clock_t begin = clock();
+
     std::map<std::string,double > visited;
     priority_queue<pair<state, double>, vector<pair<state, double> >, Comparator> Heap;
 
-    start_state.solution_ = start_state.getRobos();
+    start_state.solution_ = "["+start_state.getRobos();
 
     Heap.push(make_pair(start_state,0));  
     
@@ -294,6 +341,20 @@ pair<state, double> dijkstra(state start_state){
         state current_state = Heap.top().first;
         double cost = Heap.top().second;
         Heap.pop();
+
+        // safety exits
+        memory=max(memory,(long long)getMemoryUsage()/1024);
+        clock_t end = clock();
+        double time_spent = (double)(end - begin) / CLOCKS_PER_SEC;
+        if(memory/1024 > 500){
+            cout<<cost<<" "<<states_expanded<<" "<<time_spent<<" "<<memory<<" KB OOM\n";
+            return make_pair(current_state, cost);
+        }
+        if(time_spent>2){
+            cout<<cost<<" "<<states_expanded<<" "<<time_spent<<" "<<memory<<" KB TLE\n";
+            return make_pair(current_state, cost);
+        }
+        //
 
         // struct state *parent = (current_state.parent);
         // if(parent != NULL)
@@ -304,6 +365,10 @@ pair<state, double> dijkstra(state start_state){
         
         if(goal_check(current_state)){
             // cout<<"Reached G "<<current_state.getRep()<< " cost="<<cost<<endl;
+            // clock_t end = clock();
+            // double time_spent = (double)(end - begin) / CLOCKS_PER_SEC;
+ 
+            cout<<cost<<" "<<states_expanded<<" "<<time_spent<<" "<<memory<<" KB\n";
             return make_pair(current_state, cost);
         }
         // check if already expanded
@@ -312,13 +377,16 @@ pair<state, double> dijkstra(state start_state){
         }
         else{
             // cout<<"Expanding "<<current_state.getRep()<<" cost="<<cost<<endl;
-            
+            states_expanded +=1;
+
             visited[current_state.getRep()] = cost;
             vector<action> actions_ = get_possible_actions(current_state);
             for (int i = 0; i < actions_.size(); ++i)
             {
                 state transitioned_state = transition((current_state), actions_[i]);
-                Heap.push(make_pair(transitioned_state, cost+actions_[i].cost()));
+                double g = cost+actions_[i].cost();
+                double f = g;
+                Heap.push(make_pair(transitioned_state, f));
             }
         }
         // cout<<endl;
@@ -391,7 +459,7 @@ state takeInput(){
         vector<bool> row(width);
         for (int j = 0; j < width; ++j)
         {
-            cout<<g[i][j];
+            // cout<<g[i][j];
             
             if(g[i][j]=='*'){
                 row[j] = true;
@@ -416,15 +484,16 @@ state takeInput(){
             }
         }
         grid.push_back(row);
-        cout<<endl;
+        // cout<<endl;
     }
     return start;
 }
 int main(){
     state start_state = takeInput();
+    // cout<<"Computing";
     // print_state(start_state);
     pair<state, double> goal = dijkstra(start_state);
-    cout<<"Solution Path: "<<goal.first.solution_;
-    cout<<"Path Cost: "<<goal.second;
+    cout<<goal.first.solution_+"]"<<endl;
+
     return 0;
 }
