@@ -47,7 +47,7 @@ def tests():
 
 	an = [[[{} for t in range(ts+1)] for r in range(rs+1)]for grid in range(grids)]
 
-	algorithm = "dijkstra"
+	algorithm = request.args.get('algo')
 
 	for i,h in enumerate(range(4,11,2)):
 		for j,ra in enumerate(range(1,5)):

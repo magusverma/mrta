@@ -194,6 +194,12 @@ vector<action> get_possible_actions(state s){
         {
             for (int j = -1; j <= 1; ++j)
             {
+                if(i==-1 && j==-1) continue;
+                if(i==-1 && j==1) continue;
+                if(i==1  && j==-1) continue;
+                if(i==1  && j==1) continue;
+                
+
                 // if(i==0 &&j==0) continue;
                 if(movable(robot.row + i, robot.col + j)){
                     agent_move m;

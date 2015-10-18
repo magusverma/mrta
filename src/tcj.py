@@ -7,7 +7,7 @@ for h in range(4,11,2):
 				print "python tcj.py",h,ra,ta," > ",("../input/"+fname)
 
 '''
-# '''
+'''
 for h in range(4,11,2):
 	for ra in range(1,5):
 		for ta in range(1,11):
@@ -16,15 +16,15 @@ for h in range(4,11,2):
 				print "echo ",fname
 				print "../bin/dijkstra < ../input/%s > ../output/dijkstra_%s" %(fname,fname)
 
-# '''
+'''
 
 import random
 import sys
-'''
+# '''
 h,ra,ta = map(int, sys.argv[1:])
 w = h
 
-x = ["*","-","-"]
+x = ["-","-","-"]
 p = ["R","T"]
 r = []
 t = []
@@ -49,4 +49,4 @@ for i in range(h):
 		else:
 			s+= x[random.randint(0,2)]
 	print s
-'''
+# '''
