@@ -21,14 +21,15 @@ for h in range(4,11,2):
 import random
 import sys
 # '''
-h,ra,ta = map(int, sys.argv[1:])
+h,ra,ta = map(int, sys.argv[2:])
 w = h
 
-x = ["-","-","-"]
+x = ["-","-","-","-","*"]
 p = ["R","T"]
 r = []
 t = []
 g = []
+print sys.argv[1]
 for i in range(h):
 	for j in range(w):
 		g.append([i,j])
