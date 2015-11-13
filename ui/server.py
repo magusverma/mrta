@@ -38,6 +38,37 @@ def hello_world():
 	print grid
 	return render_template("grid.html", width=width, height=height, ans=moves,targets=targets,delay=delay,grid=grid)
 
+@app.route('/')
+def hello_world():
+	test_case_file = request.args.get('input')
+	algorithm = request.args.get('algo')
+	delay = request.args.get('delay')
+	# print test_case_file,algorithm
+	# os.system(" touch ./output/"+algorithm+"_"+test_case_file)
+	# os.system("./bin/"+algorithm + " < ./input/"+test_case_file+" > ./output/"+algorithm+"_"+test_case_file)
+	# sleep(2)
+	with open("./output/"+algorithm+"_"+test_case_file) as f: s = f.read()
+	moves = s.split("\n")[1]
+	# print s, moves, "move"
+	with open("./input/"+test_case_file) as f: s = f.read()
+	s = s.split("\n")
+	[height, width] = map(int, s[0].split(" "))
+	grid = [[False for i in range(width)] for j in range(height)]
+	targets = "["
+	comma = False
+	for i,v in enumerate(s[1:]):
+		for j,vv in enumerate(v):
+			grid[i][j] = (vv=="*")
+			if vv=="T":
+				if comma:
+					targets += ","
+				else:
+					comma = True
+				targets +="["+str(i)+","+str(j)+"]"
+	targets += "]"
+	print grid
+	return render_template("grid.html", width=width, height=height, ans=moves,targets=targets,delay=delay,grid=grid)
+
 @app.route('/analysis')
 def tests():
 	grids = len(range(4,11,2))
