@@ -1,0 +1,67 @@
+Running for Test Case File ../random_grid_inputs/137_10_10_1_3_40
+['137', '10 10', '*----*-*--', '--*------*', '*-*T---R--', '*--*--*-*-', '**------*-', '------*--*', '*--*-----*', '--**-*----', '--T***-***', 'T***---*-*']
+==> Test Case : 137 
+==> Grid Size : 10 X 10 
+==> NR: 1 , NT: 3
+ Visiting ( f = 0 , g = 0 , h = 0 ) state=[2, 7]FFF
+ Visiting ( f = 35 , g = 1 , h = 34 ) state=[2, 6]FFF
+ Visiting ( f = 34 , g = 2 , h = 32 ) state=[2, 5]FFF
+ Visiting ( f = 33 , g = 3 , h = 30 ) state=[2, 4]FFF
+ Visiting ( f = 32 , g = 4 , h = 28 ) state=[2, 3]TFF
+ Visiting ( f = 31 , g = 5 , h = 26 ) state=[2, 4]TFF
+ Visiting ( f = 30 , g = 6 , h = 24 ) state=[3, 4]TFF
+ Visiting ( f = 29 , g = 7 , h = 22 ) state=[4, 4]TFF
+ Visiting ( f = 28 , g = 8 , h = 20 ) state=[4, 3]TFF
+ Visiting ( f = 27 , g = 9 , h = 18 ) state=[4, 2]TFF
+ Visiting ( f = 26 , g = 10 , h = 16 ) state=[5, 2]TFF
+ Visiting ( f = 25 , g = 11 , h = 14 ) state=[5, 1]TFF
+ Visiting ( f = 24 , g = 12 , h = 12 ) state=[6, 1]TFF
+ Visiting ( f = 23 , g = 13 , h = 10 ) state=[7, 1]TFF
+ Visiting ( f = 22 , g = 14 , h = 8 ) state=[8, 1]TFF
+ Visiting ( f = 21 , g = 15 , h = 6 ) state=[8, 2]TTF
+ Visiting ( f = 20 , g = 16 , h = 4 ) state=[8, 1]TTF
+ Visiting ( f = 19 , g = 17 , h = 2 ) state=[8, 0]TTF
+==> solution cost =  18  , states expanded =  18 , time spent =  0.01  secs , memory taken =  5 MB
+
+targets => ['[2, 3]', '[8, 2]', '[9, 0]']
+solution:
+[2, 7]FFF
+[2, 6]FFF
+[2, 5]FFF
+[2, 4]FFF
+[2, 3]TFF
+[2, 4]TFF
+[3, 4]TFF
+[4, 4]TFF
+[4, 3]TFF
+[4, 2]TFF
+[5, 2]TFF
+[5, 1]TFF
+[6, 1]TFF
+[7, 1]TFF
+[8, 1]TFF
+[8, 2]TTF
+[8, 1]TTF
+[8, 0]TTF
+[9, 0]TTT
+
+Allocation Change Report
+[2, 7]FFF None
+[2, 6]FFF [[[2, 3], [8, 2], [9, 0]]]
+[2, 5]FFF
+[2, 4]FFF
+[2, 3]TFF
+[2, 4]TFF
+[3, 4]TFF
+[4, 4]TFF
+[4, 3]TFF
+[4, 2]TFF
+[5, 2]TFF
+[5, 1]TFF
+[6, 1]TFF
+[7, 1]TFF
+[8, 1]TFF
+[8, 2]TTF
+[8, 1]TTF
+[8, 0]TTF
+[9, 0]TTT

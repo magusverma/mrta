@@ -1,0 +1,37 @@
+Running for Test Case File ../random_grid_inputs/248_10_10_1_3_50
+['248', '10 10', '-****-*-*-', '*-----**-*', '**----****', '*-T*-*---*', '-**--*-R--', '--**--*-**', '*----**--*', '--**--*-T-', '------****', '*--T--*-**']
+==> Test Case : 248 
+==> Grid Size : 10 X 10 
+==> NR: 1 , NT: 3
+ Visiting ( f = 0 , g = 0 , h = 0 ) state=[4, 7]FFF
+ Visiting ( f = 200000000000000000 , g = 1 , h = 200000000000000000 ) state=[3, 7]FFF
+ Visiting ( f = 200000000000000000 , g = 1 , h = 200000000000000000 ) state=[4, 6]FFF
+ Visiting ( f = 200000000000000000 , g = 1 , h = 200000000000000000 ) state=[4, 8]FFF
+ Visiting ( f = 200000000000000000 , g = 1 , h = 200000000000000000 ) state=[5, 7]FFF
+ Visiting ( f = 200000000000000000 , g = 2 , h = 200000000000000000 ) state=[3, 8]FFF
+ Visiting ( f = 200000000000000000 , g = 2 , h = 200000000000000000 ) state=[3, 6]FFF
+ Visiting ( f = 200000000000000000 , g = 2 , h = 200000000000000000 ) state=[4, 9]FFF
+ Visiting ( f = 200000000000000000 , g = 2 , h = 200000000000000000 ) state=[6, 7]FFF
+ Visiting ( f = 200000000000000000 , g = 3 , h = 200000000000000000 ) state=[7, 7]FFF
+ Visiting ( f = 200000000000000000 , g = 4 , h = 200000000000000000 ) state=[7, 8]TFF
+ Visiting ( f = 200000000000000000 , g = 5 , h = 200000000000000000 ) state=[7, 9]TFF
+ Visiting ( f = 200000000000000000 , g = 5 , h = 200000000000000000 ) state=[6, 8]TFF
+ Visiting ( f = 200000000000000000 , g = 3 , h = 200000000000000000 ) state=[6, 8]FFF
+ Visiting ( f = 200000000000000000 , g = 5 , h = 200000000000000000 ) state=[7, 7]TFF
+ Visiting ( f = 200000000000000000 , g = 6 , h = 200000000000000000 ) state=[6, 7]TFF
+ Visiting ( f = 200000000000000000 , g = 7 , h = 200000000000000000 ) state=[5, 7]TFF
+ Visiting ( f = 200000000000000000 , g = 8 , h = 200000000000000000 ) state=[4, 7]TFF
+ Visiting ( f = 200000000000000000 , g = 9 , h = 200000000000000000 ) state=[3, 7]TFF
+ Visiting ( f = 200000000000000000 , g = 9 , h = 200000000000000000 ) state=[4, 6]TFF
+ Visiting ( f = 200000000000000000 , g = 9 , h = 200000000000000000 ) state=[4, 8]TFF
+ Visiting ( f = 200000000000000000 , g = 10 , h = 200000000000000000 ) state=[3, 8]TFF
+ Visiting ( f = 200000000000000000 , g = 10 , h = 200000000000000000 ) state=[3, 6]TFF
+ Visiting ( f = 200000000000000000 , g = 10 , h = 200000000000000000 ) state=[4, 9]TFF
+==> Failed in Finding a Solution, exhausted all possibilities in heap
+
+targets => ['[7, 8]', '[3, 2]', '[9, 3]']
+solution:
+[4, 7]FFF
+
+Allocation Change Report
+[4, 7]FFF None

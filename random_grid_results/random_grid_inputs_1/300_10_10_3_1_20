@@ -1,0 +1,25 @@
+Running for Test Case File ../random_grid_inputs/300_10_10_3_1_20
+['300', '10 10', '-----*--*-', '---*---*--', '----*-----', '----------', '-R**-*-***', '-*-T---R*-', '--**--**--', '-----*--*R', '---------*', '*--*-**---']
+==> Test Case : 300 
+==> Grid Size : 10 X 10 
+==> NR: 3 , NT: 1
+ Visiting ( f = 0 , g = 0 , h = 0 ) state=[4, 1][5, 7][7, 9]F
+ Visiting ( f = 7 , g = 1 , h = 6 ) state=[3, 1][5, 6][6, 9]F
+ Visiting ( f = 6 , g = 2 , h = 4 ) state=[2, 1][5, 5][5, 9]F
+ Visiting ( f = 5 , g = 3 , h = 2 ) state=[1, 1][5, 4][5, 9]F
+==> solution cost =  4  , states expanded =  4 , time spent =  0.02  secs , memory taken =  5 MB
+
+targets => ['[5, 3]']
+solution:
+[4, 1][5, 7][7, 9]F
+[3, 1][5, 6][6, 9]F
+[2, 1][5, 5][5, 9]F
+[1, 1][5, 4][5, 9]F
+[0, 1][5, 3][5, 9]T
+
+Allocation Change Report
+[4, 1][5, 7][7, 9]F None
+[3, 1][5, 6][6, 9]F [[], [[5, 3]], []]
+[2, 1][5, 5][5, 9]F
+[1, 1][5, 4][5, 9]F
+[0, 1][5, 3][5, 9]T

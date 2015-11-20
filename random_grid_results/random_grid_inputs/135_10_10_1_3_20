@@ -1,0 +1,82 @@
+Running for Test Case File ../random_grid_inputs/135_10_10_1_3_20
+['135', '10 10', '*-R-**-**-', '----------', '--*-*-*---', '---**-----', '---*---*--', '--*--*--T-', '*---------', '*---------', '----*---T-', '--T-*---**']
+==> Test Case : 135 
+==> Grid Size : 10 X 10 
+==> NR: 1 , NT: 3
+ Visiting ( f = 0 , g = 0 , h = 0 ) state=[0, 2]FFF
+ Visiting ( f = 45 , g = 1 , h = 44 ) state=[0, 1]FFF
+ Visiting ( f = 44 , g = 2 , h = 42 ) state=[1, 1]FFF
+ Visiting ( f = 43 , g = 3 , h = 40 ) state=[2, 1]FFF
+ Visiting ( f = 42 , g = 4 , h = 38 ) state=[3, 1]FFF
+ Visiting ( f = 41 , g = 5 , h = 36 ) state=[4, 1]FFF
+ Visiting ( f = 40 , g = 6 , h = 34 ) state=[5, 1]FFF
+ Visiting ( f = 39 , g = 7 , h = 32 ) state=[6, 1]FFF
+ Visiting ( f = 38 , g = 8 , h = 30 ) state=[6, 2]FFF
+ Visiting ( f = 37 , g = 9 , h = 28 ) state=[7, 2]FFF
+ Visiting ( f = 36 , g = 10 , h = 26 ) state=[8, 2]FFF
+ Visiting ( f = 35 , g = 11 , h = 24 ) state=[9, 2]TFF
+ Visiting ( f = 34 , g = 12 , h = 22 ) state=[8, 2]TFF
+ Visiting ( f = 33 , g = 13 , h = 20 ) state=[7, 2]TFF
+ Visiting ( f = 32 , g = 14 , h = 18 ) state=[7, 3]TFF
+ Visiting ( f = 31 , g = 15 , h = 16 ) state=[7, 4]TFF
+ Visiting ( f = 30 , g = 16 , h = 14 ) state=[7, 5]TFF
+ Visiting ( f = 29 , g = 17 , h = 12 ) state=[7, 6]TFF
+ Visiting ( f = 28 , g = 18 , h = 10 ) state=[7, 7]TFF
+ Visiting ( f = 27 , g = 19 , h = 8 ) state=[7, 8]TFF
+ Visiting ( f = 26 , g = 20 , h = 6 ) state=[8, 8]TFT
+ Visiting ( f = 25 , g = 21 , h = 4 ) state=[7, 8]TFT
+ Visiting ( f = 24 , g = 22 , h = 2 ) state=[6, 8]TFT
+==> solution cost =  23.0  , states expanded =  23 , time spent =  0.0  secs , memory taken =  5 MB
+
+targets => ['[9, 2]', '[5, 8]', '[8, 8]']
+solution:
+[0, 2]FFF
+[0, 1]FFF
+[1, 1]FFF
+[2, 1]FFF
+[3, 1]FFF
+[4, 1]FFF
+[5, 1]FFF
+[6, 1]FFF
+[6, 2]FFF
+[7, 2]FFF
+[8, 2]FFF
+[9, 2]TFF
+[8, 2]TFF
+[7, 2]TFF
+[7, 3]TFF
+[7, 4]TFF
+[7, 5]TFF
+[7, 6]TFF
+[7, 7]TFF
+[7, 8]TFF
+[8, 8]TFT
+[7, 8]TFT
+[6, 8]TFT
+[5, 8]TTT
+
+Allocation Change Report
+[0, 2]FFF None
+[0, 1]FFF [[[5, 8], [8, 8], [9, 2]]]
+[1, 1]FFF
+[2, 1]FFF
+[3, 1]FFF
+[4, 1]FFF
+[5, 1]FFF
+[6, 1]FFF
+[6, 2]FFF
+[7, 2]FFF
+[8, 2]FFF
+[9, 2]TFF
+[8, 2]TFF
+[7, 2]TFF
+[7, 3]TFF
+[7, 4]TFF
+[7, 5]TFF
+[7, 6]TFF
+[7, 7]TFF
+[7, 8]TFF
+[8, 8]TFT
+[7, 8]TFT
+[6, 8]TFT
+[5, 8]TTT

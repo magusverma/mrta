@@ -1,0 +1,28 @@
+Running for Test Case File ../random_grid_inputs/31_10_10_2_2_0
+['31', '10 10', '----------', '----------', '--------R-', '-----T----', '----------', '------T---', '----------', '---R------', '----------', '----------']
+==> Test Case : 31 
+==> Grid Size : 10 X 10 
+==> NR: 2 , NT: 2
+ Visiting ( f = 0 , g = 0 , h = 0 ) state=[2, 8][7, 3]FF
+ Visiting ( f = 13 , g = 1 , h = 12 ) state=[2, 7][6, 3]FF
+ Visiting ( f = 12 , g = 2 , h = 10 ) state=[2, 6][5, 3]FF
+ Visiting ( f = 9 , g = 3 , h = 6 ) state=[2, 5][5, 4]FF
+ Visiting ( f = 6 , g = 4 , h = 2 ) state=[3, 5][5, 5]FT
+==> solution cost =  5  , states expanded =  5 , time spent =  0.01  secs , memory taken =  5 MB
+
+targets => ['[5, 6]', '[3, 5]']
+solution:
+[2, 8][7, 3]FF
+[2, 7][6, 3]FF
+[2, 6][5, 3]FF
+[2, 5][5, 4]FF
+[3, 5][5, 5]FT
+[2, 5][5, 6]TT
+
+Allocation Change Report
+[2, 8][7, 3]FF None
+[2, 7][6, 3]FF [[[3, 5], [5, 6]], []]
+[2, 6][5, 3]FF
+[2, 5][5, 4]FF ==> allocation changed to [[[3, 5]], [[5, 6]]]
+[3, 5][5, 5]FT ==> allocation changed to [[], [[5, 6]]]
+[2, 5][5, 6]TT

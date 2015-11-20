@@ -1,0 +1,43 @@
+Running for Test Case File ../random_grid_inputs/381_10_10_1_2_0
+['381', '10 10', '----------', '----------', '-T--------', '----------', '----------', '----------', '----------', '----R-----', '----T-----', '----------']
+==> Test Case : 381 
+==> Grid Size : 10 X 10 
+==> NR: 1 , NT: 2
+ Visiting ( f = 0 , g = 0 , h = 0 ) state=[7, 4]FF
+ Visiting ( f = 19 , g = 1 , h = 18 ) state=[8, 4]TF
+ Visiting ( f = 18 , g = 2 , h = 16 ) state=[7, 4]TF
+ Visiting ( f = 17 , g = 3 , h = 14 ) state=[6, 4]TF
+ Visiting ( f = 16 , g = 4 , h = 12 ) state=[5, 4]TF
+ Visiting ( f = 15 , g = 5 , h = 10 ) state=[4, 4]TF
+ Visiting ( f = 14 , g = 6 , h = 8 ) state=[3, 4]TF
+ Visiting ( f = 13 , g = 7 , h = 6 ) state=[2, 4]TF
+ Visiting ( f = 12 , g = 8 , h = 4 ) state=[2, 3]TF
+ Visiting ( f = 11 , g = 9 , h = 2 ) state=[2, 2]TF
+==> solution cost =  10  , states expanded =  10 , time spent =  0.01  secs , memory taken =  5 MB
+
+targets => ['[8, 4]', '[2, 1]']
+solution:
+[7, 4]FF
+[8, 4]TF
+[7, 4]TF
+[6, 4]TF
+[5, 4]TF
+[4, 4]TF
+[3, 4]TF
+[2, 4]TF
+[2, 3]TF
+[2, 2]TF
+[2, 1]TT
+
+Allocation Change Report
+[7, 4]FF None
+[8, 4]TF [[[2, 1]]]
+[7, 4]TF
+[6, 4]TF
+[5, 4]TF
+[4, 4]TF
+[3, 4]TF
+[2, 4]TF
+[2, 3]TF
+[2, 2]TF
+[2, 1]TT

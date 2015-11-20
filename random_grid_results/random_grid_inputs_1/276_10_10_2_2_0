@@ -1,0 +1,37 @@
+Running for Test Case File ../random_grid_inputs/276_10_10_2_2_0
+['276', '10 10', '----------', '----------', '----------', '----T-----', '----R-----', '---------T', '----------', '----------', '--R-------', '----------']
+==> Test Case : 276 
+==> Grid Size : 10 X 10 
+==> NR: 2 , NT: 2
+ Visiting ( f = 0 , g = 0 , h = 0 ) state=[4, 4][8, 2]FF
+ Visiting ( f = 15 , g = 1 , h = 14 ) state=[3, 4][7, 2]FT
+ Visiting ( f = 14 , g = 2 , h = 12 ) state=[3, 5][6, 2]FT
+ Visiting ( f = 13 , g = 3 , h = 10 ) state=[3, 6][5, 2]FT
+ Visiting ( f = 12 , g = 4 , h = 8 ) state=[3, 7][4, 2]FT
+ Visiting ( f = 11 , g = 5 , h = 6 ) state=[3, 8][3, 2]FT
+ Visiting ( f = 10 , g = 6 , h = 4 ) state=[3, 9][2, 2]FT
+ Visiting ( f = 9 , g = 7 , h = 2 ) state=[4, 9][2, 1]FT
+==> solution cost =  8  , states expanded =  8 , time spent =  0.01  secs , memory taken =  5 MB
+
+targets => ['[5, 9]', '[3, 4]']
+solution:
+[4, 4][8, 2]FF
+[3, 4][7, 2]FT
+[3, 5][6, 2]FT
+[3, 6][5, 2]FT
+[3, 7][4, 2]FT
+[3, 8][3, 2]FT
+[3, 9][2, 2]FT
+[4, 9][2, 1]FT
+[5, 9][1, 1]TT
+
+Allocation Change Report
+[4, 4][8, 2]FF None
+[3, 4][7, 2]FT [[[5, 9]], []]
+[3, 5][6, 2]FT
+[3, 6][5, 2]FT
+[3, 7][4, 2]FT
+[3, 8][3, 2]FT
+[3, 9][2, 2]FT
+[4, 9][2, 1]FT
+[5, 9][1, 1]TT

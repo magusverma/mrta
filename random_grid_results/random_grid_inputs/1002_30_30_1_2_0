@@ -1,0 +1,166 @@
+Running for Test Case File ../random_grid_inputs/1002_30_30_1_2_0
+['1002', '30 30', '------------------------------', '------------------------------', '------------------------------', '------------------------------', '------------------------------', '------------------------------', '--------------------R---------', '------------------------------', '------------------------------', '------------------------------', '------------------------------', '------------------------------', '------------------------------', '------------------------------', '---------------------------T--', '------------------------------', '------------------------------', '------------------------------', '------------------------------', '------------------------------', '------------------------------', '------------------------------', '------------------------------', '------------------------------', '-T----------------------------', '------------------------------', '------------------------------', '------------------------------', '------------------------------', '------------------------------']
+==> Test Case : 1002 
+==> Grid Size : 30 X 30 
+==> NR: 1 , NT: 2
+ Visiting ( f = 0 , g = 0 , h = 0 ) state=[6, 20]FF
+ Visiting ( f = 101 , g = 1 , h = 100 ) state=[6, 21]FF
+ Visiting ( f = 100 , g = 2 , h = 98 ) state=[6, 22]FF
+ Visiting ( f = 99 , g = 3 , h = 96 ) state=[6, 23]FF
+ Visiting ( f = 98 , g = 4 , h = 94 ) state=[6, 24]FF
+ Visiting ( f = 97 , g = 5 , h = 92 ) state=[6, 25]FF
+ Visiting ( f = 96 , g = 6 , h = 90 ) state=[6, 26]FF
+ Visiting ( f = 95 , g = 7 , h = 88 ) state=[6, 27]FF
+ Visiting ( f = 94 , g = 8 , h = 86 ) state=[7, 27]FF
+ Visiting ( f = 93 , g = 9 , h = 84 ) state=[8, 27]FF
+ Visiting ( f = 92 , g = 10 , h = 82 ) state=[9, 27]FF
+ Visiting ( f = 91 , g = 11 , h = 80 ) state=[10, 27]FF
+ Visiting ( f = 90 , g = 12 , h = 78 ) state=[11, 27]FF
+ Visiting ( f = 89 , g = 13 , h = 76 ) state=[12, 27]FF
+ Visiting ( f = 88 , g = 14 , h = 74 ) state=[13, 27]FF
+ Visiting ( f = 87 , g = 15 , h = 72 ) state=[14, 27]FT
+ Visiting ( f = 86 , g = 16 , h = 70 ) state=[14, 26]FT
+ Visiting ( f = 85 , g = 17 , h = 68 ) state=[14, 25]FT
+ Visiting ( f = 84 , g = 18 , h = 66 ) state=[14, 24]FT
+ Visiting ( f = 83 , g = 19 , h = 64 ) state=[14, 23]FT
+ Visiting ( f = 82 , g = 20 , h = 62 ) state=[14, 22]FT
+ Visiting ( f = 81 , g = 21 , h = 60 ) state=[14, 21]FT
+ Visiting ( f = 80 , g = 22 , h = 58 ) state=[14, 20]FT
+ Visiting ( f = 79 , g = 23 , h = 56 ) state=[14, 19]FT
+ Visiting ( f = 78 , g = 24 , h = 54 ) state=[14, 18]FT
+ Visiting ( f = 77 , g = 25 , h = 52 ) state=[14, 17]FT
+ Visiting ( f = 76 , g = 26 , h = 50 ) state=[14, 16]FT
+ Visiting ( f = 75 , g = 27 , h = 48 ) state=[14, 15]FT
+ Visiting ( f = 74 , g = 28 , h = 46 ) state=[14, 14]FT
+ Visiting ( f = 73 , g = 29 , h = 44 ) state=[14, 13]FT
+ Visiting ( f = 72 , g = 30 , h = 42 ) state=[14, 12]FT
+ Visiting ( f = 71 , g = 31 , h = 40 ) state=[14, 11]FT
+ Visiting ( f = 70 , g = 32 , h = 38 ) state=[14, 10]FT
+ Visiting ( f = 69 , g = 33 , h = 36 ) state=[14, 9]FT
+ Visiting ( f = 68 , g = 34 , h = 34 ) state=[14, 8]FT
+ Visiting ( f = 67 , g = 35 , h = 32 ) state=[14, 7]FT
+ Visiting ( f = 66 , g = 36 , h = 30 ) state=[14, 6]FT
+ Visiting ( f = 65 , g = 37 , h = 28 ) state=[14, 5]FT
+ Visiting ( f = 64 , g = 38 , h = 26 ) state=[14, 4]FT
+ Visiting ( f = 63 , g = 39 , h = 24 ) state=[14, 3]FT
+ Visiting ( f = 62 , g = 40 , h = 22 ) state=[14, 2]FT
+ Visiting ( f = 61 , g = 41 , h = 20 ) state=[14, 1]FT
+ Visiting ( f = 60 , g = 42 , h = 18 ) state=[15, 1]FT
+ Visiting ( f = 59 , g = 43 , h = 16 ) state=[16, 1]FT
+ Visiting ( f = 58 , g = 44 , h = 14 ) state=[17, 1]FT
+ Visiting ( f = 57 , g = 45 , h = 12 ) state=[18, 1]FT
+ Visiting ( f = 56 , g = 46 , h = 10 ) state=[19, 1]FT
+ Visiting ( f = 55 , g = 47 , h = 8 ) state=[20, 1]FT
+ Visiting ( f = 54 , g = 48 , h = 6 ) state=[21, 1]FT
+ Visiting ( f = 53 , g = 49 , h = 4 ) state=[22, 1]FT
+ Visiting ( f = 52 , g = 50 , h = 2 ) state=[23, 1]FT
+==> solution cost =  51.0  , states expanded =  51 , time spent =  0.01  secs , memory taken =  5 MB
+
+targets => ['[24, 1]', '[14, 27]']
+solution:
+[6, 20]FF
+[6, 21]FF
+[6, 22]FF
+[6, 23]FF
+[6, 24]FF
+[6, 25]FF
+[6, 26]FF
+[6, 27]FF
+[7, 27]FF
+[8, 27]FF
+[9, 27]FF
+[10, 27]FF
+[11, 27]FF
+[12, 27]FF
+[13, 27]FF
+[14, 27]FT
+[14, 26]FT
+[14, 25]FT
+[14, 24]FT
+[14, 23]FT
+[14, 22]FT
+[14, 21]FT
+[14, 20]FT
+[14, 19]FT
+[14, 18]FT
+[14, 17]FT
+[14, 16]FT
+[14, 15]FT
+[14, 14]FT
+[14, 13]FT
+[14, 12]FT
+[14, 11]FT
+[14, 10]FT
+[14, 9]FT
+[14, 8]FT
+[14, 7]FT
+[14, 6]FT
+[14, 5]FT
+[14, 4]FT
+[14, 3]FT
+[14, 2]FT
+[14, 1]FT
+[15, 1]FT
+[16, 1]FT
+[17, 1]FT
+[18, 1]FT
+[19, 1]FT
+[20, 1]FT
+[21, 1]FT
+[22, 1]FT
+[23, 1]FT
+[24, 1]TT
+
+Allocation Change Report
+[6, 20]FF None
+[6, 21]FF [[[14, 27], [24, 1]]]
+[6, 22]FF
+[6, 23]FF
+[6, 24]FF
+[6, 25]FF
+[6, 26]FF
+[6, 27]FF
+[7, 27]FF
+[8, 27]FF
+[9, 27]FF
+[10, 27]FF
+[11, 27]FF
+[12, 27]FF
+[13, 27]FF
+[14, 27]FT
+[14, 26]FT
+[14, 25]FT
+[14, 24]FT
+[14, 23]FT
+[14, 22]FT
+[14, 21]FT
+[14, 20]FT
+[14, 19]FT
+[14, 18]FT
+[14, 17]FT
+[14, 16]FT
+[14, 15]FT
+[14, 14]FT
+[14, 13]FT
+[14, 12]FT
+[14, 11]FT
+[14, 10]FT
+[14, 9]FT
+[14, 8]FT
+[14, 7]FT
+[14, 6]FT
+[14, 5]FT
+[14, 4]FT
+[14, 3]FT
+[14, 2]FT
+[14, 1]FT
+[15, 1]FT
+[16, 1]FT
+[17, 1]FT
+[18, 1]FT
+[19, 1]FT
+[20, 1]FT
+[21, 1]FT
+[22, 1]FT
+[23, 1]FT
+[24, 1]TT

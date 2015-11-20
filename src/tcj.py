@@ -24,7 +24,7 @@ import sys
 h,ra,ta = map(int, sys.argv[2:])
 w = h
 
-x = ["-","-","-","-","*"]
+x = ["-","-","-","*","-"]
 p = ["R","T"]
 r = []
 t = []
@@ -48,6 +48,6 @@ for i in range(h):
 		elif [i,j] in t:
 			s+= "T"
 		else:
-			s+= x[random.randint(0,2)]
+			s+= x[random.randint(0,4)]
 	print s
 # '''

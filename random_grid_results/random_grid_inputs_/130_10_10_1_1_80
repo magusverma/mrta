@@ -1,0 +1,16 @@
+Running for Test Case File ../random_grid_inputs/130_10_10_1_1_80
+['130', '10 10', '-*****-**-', '**-*-*****', '***-*-****', '*****-****', '-***TR**-*', '*****-*-**', '*--*-****-', '*******--*', '**-***-***', '**********']
+==> Test Case : 130 
+==> Grid Size : 10 X 10 
+==> NR: 1 , NT: 1
+ Visiting ( f = 0 , g = 0 , h = 0 ) state=[4, 5]F
+==> solution cost =  1  , states expanded =  1 , time spent =  0.0  secs , memory taken =  5 MB
+
+targets => ['[4, 4]']
+solution:
+[4, 5]F
+[4, 4]T
+
+Allocation Change Report
+[4, 5]F None
+[4, 4]T [[]]

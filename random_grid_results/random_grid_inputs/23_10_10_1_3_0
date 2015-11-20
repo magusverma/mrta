@@ -1,0 +1,64 @@
+Running for Test Case File ../random_grid_inputs/23_10_10_1_3_0
+['23', '10 10', '----------', '----------', '---T------', '-------T--', '----------', '-----T----', '----------', '----------', 'R---------', '----------']
+==> Test Case : 23 
+==> Grid Size : 10 X 10 
+==> NR: 1 , NT: 3
+ Visiting ( f = 0 , g = 0 , h = 0 ) state=[8, 0]FFF
+ Visiting ( f = 33 , g = 1 , h = 32 ) state=[7, 0]FFF
+ Visiting ( f = 32 , g = 2 , h = 30 ) state=[6, 0]FFF
+ Visiting ( f = 31 , g = 3 , h = 28 ) state=[5, 0]FFF
+ Visiting ( f = 30 , g = 4 , h = 26 ) state=[5, 1]FFF
+ Visiting ( f = 29 , g = 5 , h = 24 ) state=[5, 2]FFF
+ Visiting ( f = 28 , g = 6 , h = 22 ) state=[5, 3]FFF
+ Visiting ( f = 27 , g = 7 , h = 20 ) state=[5, 4]FFF
+ Visiting ( f = 26 , g = 8 , h = 18 ) state=[5, 5]FFT
+ Visiting ( f = 25 , g = 9 , h = 16 ) state=[4, 5]FFT
+ Visiting ( f = 24 , g = 10 , h = 14 ) state=[3, 5]FFT
+ Visiting ( f = 23 , g = 11 , h = 12 ) state=[3, 6]FFT
+ Visiting ( f = 22 , g = 12 , h = 10 ) state=[3, 7]FTT
+ Visiting ( f = 21 , g = 13 , h = 8 ) state=[2, 7]FTT
+ Visiting ( f = 20 , g = 14 , h = 6 ) state=[2, 6]FTT
+ Visiting ( f = 19 , g = 15 , h = 4 ) state=[2, 5]FTT
+ Visiting ( f = 18 , g = 16 , h = 2 ) state=[2, 4]FTT
+==> solution cost =  17.0  , states expanded =  17 , time spent =  0.0  secs , memory taken =  5 MB
+
+targets => ['[2, 3]', '[3, 7]', '[5, 5]']
+solution:
+[8, 0]FFF
+[7, 0]FFF
+[6, 0]FFF
+[5, 0]FFF
+[5, 1]FFF
+[5, 2]FFF
+[5, 3]FFF
+[5, 4]FFF
+[5, 5]FFT
+[4, 5]FFT
+[3, 5]FFT
+[3, 6]FFT
+[3, 7]FTT
+[2, 7]FTT
+[2, 6]FTT
+[2, 5]FTT
+[2, 4]FTT
+[2, 3]TTT
+
+Allocation Change Report
+[8, 0]FFF None
+[7, 0]FFF [[[2, 3], [3, 7], [5, 5]]]
+[6, 0]FFF
+[5, 0]FFF
+[5, 1]FFF
+[5, 2]FFF
+[5, 3]FFF
+[5, 4]FFF
+[5, 5]FFT
+[4, 5]FFT
+[3, 5]FFT
+[3, 6]FFT
+[3, 7]FTT
+[2, 7]FTT
+[2, 6]FTT
+[2, 5]FTT
+[2, 4]FTT
+[2, 3]TTT

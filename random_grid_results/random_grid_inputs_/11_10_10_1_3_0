@@ -1,0 +1,46 @@
+Running for Test Case File ../random_grid_inputs/11_10_10_1_3_0
+['11', '10 10', '----------', '----------', '---T------', '-T--------', '----------', '----------', '---R-T----', '----------', '----------', '----------']
+==> Test Case : 11 
+==> Grid Size : 10 X 10 
+==> NR: 1 , NT: 3
+ Visiting ( f = 0 , g = 0 , h = 0 ) state=[6, 3]FFF
+ Visiting ( f = 21 , g = 1 , h = 20 ) state=[6, 4]FFF
+ Visiting ( f = 20 , g = 2 , h = 18 ) state=[6, 5]FFT
+ Visiting ( f = 19 , g = 3 , h = 16 ) state=[5, 5]FFT
+ Visiting ( f = 18 , g = 4 , h = 14 ) state=[4, 5]FFT
+ Visiting ( f = 17 , g = 5 , h = 12 ) state=[3, 5]FFT
+ Visiting ( f = 16 , g = 6 , h = 10 ) state=[2, 5]FFT
+ Visiting ( f = 15 , g = 7 , h = 8 ) state=[2, 4]FFT
+ Visiting ( f = 14 , g = 8 , h = 6 ) state=[2, 3]TFT
+ Visiting ( f = 13 , g = 9 , h = 4 ) state=[2, 2]TFT
+ Visiting ( f = 12 , g = 10 , h = 2 ) state=[2, 1]TFT
+==> solution cost =  11  , states expanded =  11 , time spent =  0.0  secs , memory taken =  5 MB
+
+targets => ['[2, 3]', '[3, 1]', '[6, 5]']
+solution:
+[6, 3]FFF
+[6, 4]FFF
+[6, 5]FFT
+[5, 5]FFT
+[4, 5]FFT
+[3, 5]FFT
+[2, 5]FFT
+[2, 4]FFT
+[2, 3]TFT
+[2, 2]TFT
+[2, 1]TFT
+[3, 1]TTT
+
+Allocation Change Report
+[6, 3]FFF None
+[6, 4]FFF [[[2, 3], [3, 1], [6, 5]]]
+[6, 5]FFT
+[5, 5]FFT
+[4, 5]FFT
+[3, 5]FFT
+[2, 5]FFT
+[2, 4]FFT
+[2, 3]TFT
+[2, 2]TFT
+[2, 1]TFT
+[3, 1]TTT

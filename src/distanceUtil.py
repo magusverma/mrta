@@ -6,7 +6,6 @@ Created on Fri Nov 13 04:26:01 2015
 """
 
 inf = 99999999999999999
-from Queue import PriorityQueue
 from collections import defaultdict
 from math import sqrt
 import json
@@ -30,7 +29,6 @@ def getProcomputedDistancesFor(grid, target_pos_list):
         while(q):
             #print q.queue
             cost, position  = heappop(q)
-            print position, cost
             
             if not visited[position]:
                 visited[position] = True

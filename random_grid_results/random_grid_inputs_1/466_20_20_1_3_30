@@ -1,0 +1,217 @@
+Running for Test Case File ../random_grid_inputs/466_20_20_1_3_30
+['466', '20 20', '----*---*--------*--', '------------***T**--', '-*----***---------*-', '*--------*---------*', '***-*--**--*-*------', '--***----------**---', '***--*---**----*---*', '-*----*-------**---*', 'T------**------**---', '*----*-**---*---*-**', '-------*-*-*--T-----', '**---*----*-------*-', '**--****---*-------*', '----**-*---*---*--*-', '-*--*----*--**------', '-*----*-*--***-*----', '----**---*-*--**-*--', '-*--*------------*-*', '--*-**--*-----------', '----*---**------**-R']
+==> Test Case : 466 
+==> Grid Size : 20 X 20 
+==> NR: 1 , NT: 3
+ Visiting ( f = 0 , g = 0 , h = 0 ) state=[19, 19]FFF
+ Visiting ( f = 135 , g = 1 , h = 134 ) state=[18, 19]FFF
+ Visiting ( f = 134 , g = 2 , h = 132 ) state=[18, 18]FFF
+ Visiting ( f = 133 , g = 3 , h = 130 ) state=[17, 18]FFF
+ Visiting ( f = 132 , g = 4 , h = 128 ) state=[16, 18]FFF
+ Visiting ( f = 131 , g = 5 , h = 126 ) state=[15, 18]FFF
+ Visiting ( f = 130 , g = 6 , h = 124 ) state=[14, 18]FFF
+ Visiting ( f = 129 , g = 7 , h = 122 ) state=[14, 17]FFF
+ Visiting ( f = 128 , g = 8 , h = 120 ) state=[13, 17]FFF
+ Visiting ( f = 127 , g = 9 , h = 118 ) state=[12, 17]FFF
+ Visiting ( f = 126 , g = 10 , h = 116 ) state=[11, 17]FFF
+ Visiting ( f = 125 , g = 11 , h = 114 ) state=[10, 17]FFF
+ Visiting ( f = 124 , g = 12 , h = 112 ) state=[9, 17]FFF
+ Visiting ( f = 123 , g = 13 , h = 110 ) state=[8, 17]FFF
+ Visiting ( f = 122 , g = 14 , h = 108 ) state=[7, 17]FFF
+ Visiting ( f = 121 , g = 15 , h = 106 ) state=[6, 17]FFF
+ Visiting ( f = 120 , g = 16 , h = 104 ) state=[5, 17]FFF
+ Visiting ( f = 119 , g = 17 , h = 102 ) state=[4, 17]FFF
+ Visiting ( f = 118 , g = 18 , h = 100 ) state=[3, 17]FFF
+ Visiting ( f = 117 , g = 19 , h = 98 ) state=[2, 17]FFF
+ Visiting ( f = 116 , g = 20 , h = 96 ) state=[2, 16]FFF
+ Visiting ( f = 115 , g = 21 , h = 94 ) state=[2, 15]FFF
+ Visiting ( f = 114 , g = 22 , h = 92 ) state=[1, 15]FTF
+ Visiting ( f = 113 , g = 23 , h = 90 ) state=[2, 15]TFF
+ Visiting ( f = 112 , g = 24 , h = 88 ) state=[2, 14]FTF
+ Visiting ( f = 111 , g = 25 , h = 86 ) state=[3, 14]TFF
+ Visiting ( f = 110 , g = 26 , h = 84 ) state=[4, 14]FTF
+ Visiting ( f = 109 , g = 27 , h = 82 ) state=[5, 14]TFF
+ Visiting ( f = 108 , g = 28 , h = 80 ) state=[5, 13]FTF
+ Visiting ( f = 107 , g = 29 , h = 78 ) state=[6, 13]TFF
+ Visiting ( f = 106 , g = 30 , h = 76 ) state=[7, 13]FTF
+ Visiting ( f = 105 , g = 31 , h = 74 ) state=[8, 13]TFF
+ Visiting ( f = 104 , g = 32 , h = 72 ) state=[8, 14]FTF
+ Visiting ( f = 103 , g = 33 , h = 70 ) state=[9, 14]TFF
+ Visiting ( f = 102 , g = 34 , h = 68 ) state=[10, 14]TTF
+ Visiting ( f = 101 , g = 35 , h = 66 ) state=[10, 15]TTF
+ Visiting ( f = 100 , g = 36 , h = 64 ) state=[10, 16]TTF
+ Visiting ( f = 99 , g = 37 , h = 62 ) state=[11, 16]TTF
+ Visiting ( f = 98 , g = 38 , h = 60 ) state=[12, 16]TTF
+ Visiting ( f = 97 , g = 39 , h = 58 ) state=[13, 16]TTF
+ Visiting ( f = 96 , g = 40 , h = 56 ) state=[14, 16]TTF
+ Visiting ( f = 95 , g = 41 , h = 54 ) state=[15, 16]TTF
+ Visiting ( f = 94 , g = 42 , h = 52 ) state=[16, 16]TTF
+ Visiting ( f = 93 , g = 43 , h = 50 ) state=[17, 16]TTF
+ Visiting ( f = 92 , g = 44 , h = 48 ) state=[17, 15]TTF
+ Visiting ( f = 91 , g = 45 , h = 46 ) state=[17, 14]TTF
+ Visiting ( f = 90 , g = 46 , h = 44 ) state=[17, 13]TTF
+ Visiting ( f = 89 , g = 47 , h = 42 ) state=[17, 12]TTF
+ Visiting ( f = 88 , g = 48 , h = 40 ) state=[17, 11]TTF
+ Visiting ( f = 87 , g = 49 , h = 38 ) state=[17, 10]TTF
+ Visiting ( f = 86 , g = 50 , h = 36 ) state=[16, 10]TTF
+ Visiting ( f = 85 , g = 51 , h = 34 ) state=[15, 10]TTF
+ Visiting ( f = 84 , g = 52 , h = 32 ) state=[14, 10]TTF
+ Visiting ( f = 83 , g = 53 , h = 30 ) state=[13, 10]TTF
+ Visiting ( f = 82 , g = 54 , h = 28 ) state=[12, 10]TTF
+ Visiting ( f = 81 , g = 55 , h = 26 ) state=[12, 9]TTF
+ Visiting ( f = 80 , g = 56 , h = 24 ) state=[11, 9]TTF
+ Visiting ( f = 79 , g = 57 , h = 22 ) state=[11, 8]TTF
+ Visiting ( f = 78 , g = 58 , h = 20 ) state=[11, 7]TTF
+ Visiting ( f = 77 , g = 59 , h = 18 ) state=[11, 6]TTF
+ Visiting ( f = 76 , g = 60 , h = 16 ) state=[10, 6]TTF
+ Visiting ( f = 75 , g = 61 , h = 14 ) state=[9, 6]TTF
+ Visiting ( f = 74 , g = 62 , h = 12 ) state=[8, 6]TTF
+ Visiting ( f = 73 , g = 63 , h = 10 ) state=[8, 5]TTF
+ Visiting ( f = 72 , g = 64 , h = 8 ) state=[8, 4]TTF
+ Visiting ( f = 71 , g = 65 , h = 6 ) state=[8, 3]TTF
+ Visiting ( f = 70 , g = 66 , h = 4 ) state=[8, 2]TTF
+ Visiting ( f = 69 , g = 67 , h = 2 ) state=[8, 1]TTF
+==> solution cost =  68  , states expanded =  68 , time spent =  0.02  secs , memory taken =  5 MB
+
+targets => ['[10, 14]', '[1, 15]', '[8, 0]']
+solution:
+[19, 19]FFF
+[18, 19]FFF
+[18, 18]FFF
+[17, 18]FFF
+[16, 18]FFF
+[15, 18]FFF
+[14, 18]FFF
+[14, 17]FFF
+[13, 17]FFF
+[12, 17]FFF
+[11, 17]FFF
+[10, 17]FFF
+[9, 17]FFF
+[8, 17]FFF
+[7, 17]FFF
+[6, 17]FFF
+[5, 17]FFF
+[4, 17]FFF
+[3, 17]FFF
+[2, 17]FFF
+[2, 16]FFF
+[2, 15]FFF
+[1, 15]FTF
+[2, 15]TFF
+[2, 14]FTF
+[3, 14]TFF
+[4, 14]FTF
+[5, 14]TFF
+[5, 13]FTF
+[6, 13]TFF
+[7, 13]FTF
+[8, 13]TFF
+[8, 14]FTF
+[9, 14]TFF
+[10, 14]TTF
+[10, 15]TTF
+[10, 16]TTF
+[11, 16]TTF
+[12, 16]TTF
+[13, 16]TTF
+[14, 16]TTF
+[15, 16]TTF
+[16, 16]TTF
+[17, 16]TTF
+[17, 15]TTF
+[17, 14]TTF
+[17, 13]TTF
+[17, 12]TTF
+[17, 11]TTF
+[17, 10]TTF
+[16, 10]TTF
+[15, 10]TTF
+[14, 10]TTF
+[13, 10]TTF
+[12, 10]TTF
+[12, 9]TTF
+[11, 9]TTF
+[11, 8]TTF
+[11, 7]TTF
+[11, 6]TTF
+[10, 6]TTF
+[9, 6]TTF
+[8, 6]TTF
+[8, 5]TTF
+[8, 4]TTF
+[8, 3]TTF
+[8, 2]TTF
+[8, 1]TTF
+[8, 0]TTT
+
+Allocation Change Report
+[19, 19]FFF None
+[18, 19]FFF [[[1, 15], [8, 0], [10, 14]]]
+[18, 18]FFF
+[17, 18]FFF
+[16, 18]FFF
+[15, 18]FFF
+[14, 18]FFF
+[14, 17]FFF
+[13, 17]FFF
+[12, 17]FFF
+[11, 17]FFF
+[10, 17]FFF
+[9, 17]FFF
+[8, 17]FFF
+[7, 17]FFF
+[6, 17]FFF
+[5, 17]FFF
+[4, 17]FFF
+[3, 17]FFF
+[2, 17]FFF
+[2, 16]FFF
+[2, 15]FFF
+[1, 15]FTF
+[2, 15]TFF
+[2, 14]FTF
+[3, 14]TFF
+[4, 14]FTF
+[5, 14]TFF
+[5, 13]FTF
+[6, 13]TFF
+[7, 13]FTF
+[8, 13]TFF
+[8, 14]FTF
+[9, 14]TFF
+[10, 14]TTF
+[10, 15]TTF
+[10, 16]TTF
+[11, 16]TTF
+[12, 16]TTF
+[13, 16]TTF
+[14, 16]TTF
+[15, 16]TTF
+[16, 16]TTF
+[17, 16]TTF
+[17, 15]TTF
+[17, 14]TTF
+[17, 13]TTF
+[17, 12]TTF
+[17, 11]TTF
+[17, 10]TTF
+[16, 10]TTF
+[15, 10]TTF
+[14, 10]TTF
+[13, 10]TTF
+[12, 10]TTF
+[12, 9]TTF
+[11, 9]TTF
+[11, 8]TTF
+[11, 7]TTF
+[11, 6]TTF
+[10, 6]TTF
+[9, 6]TTF
+[8, 6]TTF
+[8, 5]TTF
+[8, 4]TTF
+[8, 3]TTF
+[8, 2]TTF
+[8, 1]TTF
+[8, 0]TTT

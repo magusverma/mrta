@@ -1,0 +1,31 @@
+Running for Test Case File ../random_grid_inputs/152_10_10_2_1_20
+['152', '10 10', '------*-**', '*----*---*', '---*------', '------T--*', '-----*-*--', '----**----', '*-*-----*-', '--*-R---*-', '-*--R-----', '-*-**---*-']
+==> Test Case : 152 
+==> Grid Size : 10 X 10 
+==> NR: 2 , NT: 1
+ Visiting ( f = 0 , g = 0 , h = 0 ) state=[7, 4][8, 4]F
+ Visiting ( f = 11 , g = 1 , h = 10 ) state=[6, 4][7, 4]F
+ Visiting ( f = 10 , g = 2 , h = 8 ) state=[6, 5][6, 4]F
+ Visiting ( f = 9 , g = 3 , h = 6 ) state=[6, 6][6, 4]F
+ Visiting ( f = 8 , g = 4 , h = 4 ) state=[5, 6][6, 4]F
+ Visiting ( f = 7 , g = 5 , h = 2 ) state=[4, 6][6, 4]F
+==> solution cost =  6  , states expanded =  6 , time spent =  0.01  secs , memory taken =  5 MB
+
+targets => ['[3, 6]']
+solution:
+[7, 4][8, 4]F
+[6, 4][7, 4]F
+[6, 5][6, 4]F
+[6, 6][6, 4]F
+[5, 6][6, 4]F
+[4, 6][6, 4]F
+[3, 6][6, 4]T
+
+Allocation Change Report
+[7, 4][8, 4]F None
+[6, 4][7, 4]F [[[3, 6]], []]
+[6, 5][6, 4]F
+[6, 6][6, 4]F
+[5, 6][6, 4]F
+[4, 6][6, 4]F
+[3, 6][6, 4]T

@@ -6,6 +6,7 @@ Created on Fri Nov 13 04:07:30 2015
 """
 
 from bruteUtils import increment, reached_limit
+from math import sqrt
 
 connectedness = 5
 
@@ -19,12 +20,16 @@ class MRTAEnvironment:
         
 class MRTAState:
     def __init__(self, robots__, environment__, picked__=None,parent__=None):
+        #print "robots__ = %s, environment__ = %s, picked__= %s,parent__= %s" % ( str(robots__), str(environment__), str(picked__),str(parent__))
         self.robots = robots__
         self.environment = environment__
 
         # Example : {'[4, 5]': [False, None], '[6, 7]': [True, None]}
         if picked__ is None:
             self.picked = {str(i): [False,None] for i in self.environment.targets}
+            for i, robot in enumerate(self.robots):
+                if str(robot) in self.picked.keys():
+                    self.picked[str(robot)] = [True, i]
         else:
             self.picked = picked__
         
@@ -51,7 +56,7 @@ class MRTAState:
             if (not(0<=robo[0]<self.environment.height)) or (not(0<=robo[1]<self.environment.width)):
                 #outside grid
                 return False
-            if blocked(robo[0],robo[1]):
+            if not self.environment.grid[robo[0]][robo[1]]:
                 # robot standing on a blocked cell
                 return False
                 

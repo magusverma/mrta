@@ -1,0 +1,85 @@
+Running for Test Case File ../random_grid_inputs/783_20_20_1_2_10
+['783', '20 20', '---*----------*--*--', '-**----*------------', '---*--------------*-', '-----*-*------------', '-*--------*-------*-', '--*-R-------*-------', '--------*-*-----T-*-', '-----*-------------*', '---*--------*--*----', '*-------------------', '*--*--*-------------', '------------*-------', '-*---------*---*--**', '--*-----------*-----', '---*-----*----------', '---*--------------T-', '--------------------', '-----------*--------', '---------*----------', '--*------*----------']
+==> Test Case : 783 
+==> Grid Size : 20 X 20 
+==> NR: 1 , NT: 2
+ Visiting ( f = 0 , g = 0 , h = 0 ) state=[5, 4]FF
+ Visiting ( f = 47 , g = 1 , h = 46 ) state=[5, 5]FF
+ Visiting ( f = 46 , g = 2 , h = 44 ) state=[5, 6]FF
+ Visiting ( f = 45 , g = 3 , h = 42 ) state=[5, 7]FF
+ Visiting ( f = 44 , g = 4 , h = 40 ) state=[5, 8]FF
+ Visiting ( f = 43 , g = 5 , h = 38 ) state=[5, 9]FF
+ Visiting ( f = 42 , g = 6 , h = 36 ) state=[5, 10]FF
+ Visiting ( f = 41 , g = 7 , h = 34 ) state=[5, 11]FF
+ Visiting ( f = 40 , g = 8 , h = 32 ) state=[6, 11]FF
+ Visiting ( f = 39 , g = 9 , h = 30 ) state=[6, 12]FF
+ Visiting ( f = 38 , g = 10 , h = 28 ) state=[6, 13]FF
+ Visiting ( f = 37 , g = 11 , h = 26 ) state=[6, 14]FF
+ Visiting ( f = 36 , g = 12 , h = 24 ) state=[6, 15]FF
+ Visiting ( f = 35 , g = 13 , h = 22 ) state=[6, 16]TF
+ Visiting ( f = 34 , g = 14 , h = 20 ) state=[6, 17]TF
+ Visiting ( f = 33 , g = 15 , h = 18 ) state=[7, 17]TF
+ Visiting ( f = 32 , g = 16 , h = 16 ) state=[8, 17]TF
+ Visiting ( f = 31 , g = 17 , h = 14 ) state=[9, 17]TF
+ Visiting ( f = 30 , g = 18 , h = 12 ) state=[10, 17]TF
+ Visiting ( f = 29 , g = 19 , h = 10 ) state=[11, 17]TF
+ Visiting ( f = 28 , g = 20 , h = 8 ) state=[12, 17]TF
+ Visiting ( f = 27 , g = 21 , h = 6 ) state=[13, 17]TF
+ Visiting ( f = 26 , g = 22 , h = 4 ) state=[13, 18]TF
+ Visiting ( f = 25 , g = 23 , h = 2 ) state=[14, 18]TF
+==> solution cost =  24  , states expanded =  24 , time spent =  0.01  secs , memory taken =  5 MB
+
+targets => ['[6, 16]', '[15, 18]']
+solution:
+[5, 4]FF
+[5, 5]FF
+[5, 6]FF
+[5, 7]FF
+[5, 8]FF
+[5, 9]FF
+[5, 10]FF
+[5, 11]FF
+[6, 11]FF
+[6, 12]FF
+[6, 13]FF
+[6, 14]FF
+[6, 15]FF
+[6, 16]TF
+[6, 17]TF
+[7, 17]TF
+[8, 17]TF
+[9, 17]TF
+[10, 17]TF
+[11, 17]TF
+[12, 17]TF
+[13, 17]TF
+[13, 18]TF
+[14, 18]TF
+[15, 18]TT
+
+Allocation Change Report
+[5, 4]FF None
+[5, 5]FF [[[6, 16], [15, 18]]]
+[5, 6]FF
+[5, 7]FF
+[5, 8]FF
+[5, 9]FF
+[5, 10]FF
+[5, 11]FF
+[6, 11]FF
+[6, 12]FF
+[6, 13]FF
+[6, 14]FF
+[6, 15]FF
+[6, 16]TF
+[6, 17]TF
+[7, 17]TF
+[8, 17]TF
+[9, 17]TF
+[10, 17]TF
+[11, 17]TF
+[12, 17]TF
+[13, 17]TF
+[13, 18]TF
+[14, 18]TF
+[15, 18]TT

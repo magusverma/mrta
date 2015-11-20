@@ -1,0 +1,40 @@
+Running for Test Case File ../random_grid_inputs/355_10_10_1_3_20
+['355', '10 10', '*------*--', '---------R', '*---------', '-*-------*', '-*-*-----T', '-----*T--T', '*-*-*-*---', '-------*--', '----*-----', '-*-*-*----']
+==> Test Case : 355 
+==> Grid Size : 10 X 10 
+==> NR: 1 , NT: 3
+ Visiting ( f = 0 , g = 0 , h = 0 ) state=[1, 9]FFF
+ Visiting ( f = 17 , g = 1 , h = 16 ) state=[1, 8]FFF
+ Visiting ( f = 16 , g = 2 , h = 14 ) state=[2, 8]FFF
+ Visiting ( f = 15 , g = 3 , h = 12 ) state=[3, 8]FFF
+ Visiting ( f = 14 , g = 4 , h = 10 ) state=[4, 8]FFF
+ Visiting ( f = 13 , g = 5 , h = 8 ) state=[4, 9]FFT
+ Visiting ( f = 12 , g = 6 , h = 6 ) state=[5, 9]TFT
+ Visiting ( f = 11 , g = 7 , h = 4 ) state=[5, 8]TFT
+ Visiting ( f = 10 , g = 8 , h = 2 ) state=[5, 7]TFT
+==> solution cost =  9  , states expanded =  9 , time spent =  0.0  secs , memory taken =  5 MB
+
+targets => ['[5, 9]', '[5, 6]', '[4, 9]']
+solution:
+[1, 9]FFF
+[1, 8]FFF
+[2, 8]FFF
+[3, 8]FFF
+[4, 8]FFF
+[4, 9]FFT
+[5, 9]TFT
+[5, 8]TFT
+[5, 7]TFT
+[5, 6]TTT
+
+Allocation Change Report
+[1, 9]FFF None
+[1, 8]FFF [[[4, 9], [5, 6], [5, 9]]]
+[2, 8]FFF
+[3, 8]FFF
+[4, 8]FFF
+[4, 9]FFT
+[5, 9]TFT
+[5, 8]TFT
+[5, 7]TFT
+[5, 6]TTT

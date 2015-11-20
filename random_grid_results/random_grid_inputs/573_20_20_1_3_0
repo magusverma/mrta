@@ -1,0 +1,127 @@
+Running for Test Case File ../random_grid_inputs/573_20_20_1_3_0
+['573', '20 20', '--------------------', '--------------------', '--------------------', '--------------------', '--------------------', '--------------------', '-T------------------', '--------------------', '--------------------', '--------------------', '--------------------', '--R-----------------', '--------------------', '--------------------', '---------------T----', '--------------------', '--------------------', '--------------------', '--------------------', '---T----------------']
+==> Test Case : 573 
+==> Grid Size : 20 X 20 
+==> NR: 1 , NT: 3
+ Visiting ( f = 0 , g = 0 , h = 0 ) state=[11, 2]FFF
+ Visiting ( f = 75 , g = 1 , h = 74 ) state=[10, 2]FFF
+ Visiting ( f = 74 , g = 2 , h = 72 ) state=[9, 2]FFF
+ Visiting ( f = 73 , g = 3 , h = 70 ) state=[8, 2]FFF
+ Visiting ( f = 72 , g = 4 , h = 68 ) state=[7, 2]FFF
+ Visiting ( f = 71 , g = 5 , h = 66 ) state=[6, 2]FFF
+ Visiting ( f = 70 , g = 6 , h = 64 ) state=[6, 1]TFF
+ Visiting ( f = 69 , g = 7 , h = 62 ) state=[6, 2]TFF
+ Visiting ( f = 68 , g = 8 , h = 60 ) state=[6, 3]TFF
+ Visiting ( f = 67 , g = 9 , h = 58 ) state=[7, 3]TFF
+ Visiting ( f = 66 , g = 10 , h = 56 ) state=[8, 3]TFF
+ Visiting ( f = 65 , g = 11 , h = 54 ) state=[9, 3]TFF
+ Visiting ( f = 64 , g = 12 , h = 52 ) state=[10, 3]TFF
+ Visiting ( f = 63 , g = 13 , h = 50 ) state=[11, 3]TFF
+ Visiting ( f = 62 , g = 14 , h = 48 ) state=[12, 3]TFF
+ Visiting ( f = 61 , g = 15 , h = 46 ) state=[13, 3]TFF
+ Visiting ( f = 60 , g = 16 , h = 44 ) state=[14, 3]TFF
+ Visiting ( f = 59 , g = 17 , h = 42 ) state=[15, 3]TFF
+ Visiting ( f = 58 , g = 18 , h = 40 ) state=[16, 3]TFF
+ Visiting ( f = 57 , g = 19 , h = 38 ) state=[17, 3]TFF
+ Visiting ( f = 56 , g = 20 , h = 36 ) state=[18, 3]TFF
+ Visiting ( f = 55 , g = 21 , h = 34 ) state=[19, 3]TTF
+ Visiting ( f = 54 , g = 22 , h = 32 ) state=[18, 3]TTF
+ Visiting ( f = 53 , g = 23 , h = 30 ) state=[17, 3]TTF
+ Visiting ( f = 52 , g = 24 , h = 28 ) state=[16, 3]TTF
+ Visiting ( f = 51 , g = 25 , h = 26 ) state=[15, 3]TTF
+ Visiting ( f = 50 , g = 26 , h = 24 ) state=[14, 3]TTF
+ Visiting ( f = 49 , g = 27 , h = 22 ) state=[14, 4]TTF
+ Visiting ( f = 48 , g = 28 , h = 20 ) state=[14, 5]TTF
+ Visiting ( f = 47 , g = 29 , h = 18 ) state=[14, 6]TTF
+ Visiting ( f = 46 , g = 30 , h = 16 ) state=[14, 7]TTF
+ Visiting ( f = 45 , g = 31 , h = 14 ) state=[14, 8]TTF
+ Visiting ( f = 44 , g = 32 , h = 12 ) state=[14, 9]TTF
+ Visiting ( f = 43 , g = 33 , h = 10 ) state=[14, 10]TTF
+ Visiting ( f = 42 , g = 34 , h = 8 ) state=[14, 11]TTF
+ Visiting ( f = 41 , g = 35 , h = 6 ) state=[14, 12]TTF
+ Visiting ( f = 40 , g = 36 , h = 4 ) state=[14, 13]TTF
+ Visiting ( f = 39 , g = 37 , h = 2 ) state=[14, 14]TTF
+==> solution cost =  38.0  , states expanded =  38 , time spent =  0.01  secs , memory taken =  5 MB
+
+targets => ['[6, 1]', '[19, 3]', '[14, 15]']
+solution:
+[11, 2]FFF
+[10, 2]FFF
+[9, 2]FFF
+[8, 2]FFF
+[7, 2]FFF
+[6, 2]FFF
+[6, 1]TFF
+[6, 2]TFF
+[6, 3]TFF
+[7, 3]TFF
+[8, 3]TFF
+[9, 3]TFF
+[10, 3]TFF
+[11, 3]TFF
+[12, 3]TFF
+[13, 3]TFF
+[14, 3]TFF
+[15, 3]TFF
+[16, 3]TFF
+[17, 3]TFF
+[18, 3]TFF
+[19, 3]TTF
+[18, 3]TTF
+[17, 3]TTF
+[16, 3]TTF
+[15, 3]TTF
+[14, 3]TTF
+[14, 4]TTF
+[14, 5]TTF
+[14, 6]TTF
+[14, 7]TTF
+[14, 8]TTF
+[14, 9]TTF
+[14, 10]TTF
+[14, 11]TTF
+[14, 12]TTF
+[14, 13]TTF
+[14, 14]TTF
+[14, 15]TTT
+
+Allocation Change Report
+[11, 2]FFF None
+[10, 2]FFF [[[6, 1], [14, 15], [19, 3]]]
+[9, 2]FFF
+[8, 2]FFF
+[7, 2]FFF
+[6, 2]FFF
+[6, 1]TFF
+[6, 2]TFF
+[6, 3]TFF
+[7, 3]TFF
+[8, 3]TFF
+[9, 3]TFF
+[10, 3]TFF
+[11, 3]TFF
+[12, 3]TFF
+[13, 3]TFF
+[14, 3]TFF
+[15, 3]TFF
+[16, 3]TFF
+[17, 3]TFF
+[18, 3]TFF
+[19, 3]TTF
+[18, 3]TTF
+[17, 3]TTF
+[16, 3]TTF
+[15, 3]TTF
+[14, 3]TTF
+[14, 4]TTF
+[14, 5]TTF
+[14, 6]TTF
+[14, 7]TTF
+[14, 8]TTF
+[14, 9]TTF
+[14, 10]TTF
+[14, 11]TTF
+[14, 12]TTF
+[14, 13]TTF
+[14, 14]TTF
+[14, 15]TTT

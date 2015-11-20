@@ -1,0 +1,20 @@
+Running for Test Case File ../random_grid_inputs/129_10_10_1_1_60
+['129', '10 10', '****-***-R', '*-*****---', '-*****--**', '-*******--', '*--***-**-', '-**--*---*', 'T*--****--', '**--****--', '*---*-*-**', '*-*-**-*-*']
+==> Test Case : 129 
+==> Grid Size : 10 X 10 
+==> NR: 1 , NT: 1
+ Visiting ( f = 0 , g = 0 , h = 0 ) state=[0, 9]F
+ Visiting ( f = 199999999999999999 , g = 1 , h = 199999999999999998 ) state=[0, 8]F
+ Visiting ( f = 199999999999999999 , g = 1 , h = 199999999999999998 ) state=[1, 9]F
+ Visiting ( f = 200000000000000000 , g = 2 , h = 199999999999999998 ) state=[1, 8]F
+ Visiting ( f = 200000000000000001 , g = 3 , h = 199999999999999998 ) state=[1, 7]F
+ Visiting ( f = 200000000000000002 , g = 4 , h = 199999999999999998 ) state=[2, 7]F
+ Visiting ( f = 200000000000000003 , g = 5 , h = 199999999999999998 ) state=[2, 6]F
+==> Failed in Finding a Solution, exhausted all possibilities in heap
+
+targets => ['[6, 0]']
+solution:
+[0, 9]F
+
+Allocation Change Report
+[0, 9]F None

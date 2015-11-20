@@ -1,0 +1,17 @@
+Running for Test Case File ../random_grid_inputs/55_10_10_3_1_80
+['55', '10 10', '**--**-***', '******-***', '***R-*****', '**********', '*-********', '********R-', '-****-****', '*-****-*-*', '-*********', '**R****T*-']
+==> Test Case : 55 
+==> Grid Size : 10 X 10 
+==> NR: 3 , NT: 1
+ Visiting ( f = 0 , g = 0 , h = 0 ) state=[2, 3][5, 8][9, 2]F
+ Visiting ( f = 199999999999999999 , g = 1 , h = 199999999999999998 ) state=[2, 3][5, 9][9, 2]F
+ Visiting ( f = 199999999999999999 , g = 1 , h = 199999999999999998 ) state=[2, 4][5, 9][9, 2]F
+ Visiting ( f = 199999999999999999 , g = 1 , h = 199999999999999998 ) state=[2, 4][5, 8][9, 2]F
+==> Failed in Finding a Solution, exhausted all possibilities in heap
+
+targets => ['[9, 7]']
+solution:
+[2, 3][5, 8][9, 2]F
+
+Allocation Change Report
+[2, 3][5, 8][9, 2]F None
